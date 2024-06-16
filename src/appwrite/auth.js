@@ -36,7 +36,7 @@ class AuthService {
 
     async currentAccountStatus (){
         try {
-            await this.account.get()
+            return await this.account.get()
         } catch (error) {
             console.log("Error at appwrite current Account status::",error);
         }
