@@ -1,7 +1,7 @@
 import conf from "../conf/conf.js";
 import { Client, Account, ID, Databases, Storage, ImageFormat } from "appwrite";
 
-class StorageService{
+export  class StorageService{
     client = new Client()
     databses;
     bucket;
@@ -87,3 +87,7 @@ class StorageService{
 
     }
 }
+
+const appwriteService = new Storage()
+
+export default appwriteService
